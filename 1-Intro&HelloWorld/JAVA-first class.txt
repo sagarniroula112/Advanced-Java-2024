@@ -1,0 +1,13 @@
+JAVA
+
+1991
+
+1996- JDK 1.0(java)
+
+
+
+2024- JDK 22.0
+
+JDK(for java application)=>JRE(to run java apps)=>JVM(byte code change into machine code)
+
+IDE: Eclipse, NetBreans, Intellij, STS, VS
