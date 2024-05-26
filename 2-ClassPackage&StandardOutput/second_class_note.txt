@@ -1,4 +1,4 @@
-Project-based hierarchy
+Project-based hierarchy - Second class Note
 
 "main" and Ctrl+Space then Enter -- Boilerplate code
 
