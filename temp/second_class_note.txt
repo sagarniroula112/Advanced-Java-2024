@@ -1,0 +1,49 @@
+Project-based hierarchy - Second class Note
+
+"main" and Ctrl+Space then Enter -- Boilerplate code
+
+"sysout"
+
+-- creates default package that encloses java class files inside
+
+concatenation: "something" + variable_name
+
+main-method: run only, not for compilation
+
+highlighted words-- keywords, pre-defined in java library
+
+"Hello" vanne class file chai "corejava" vanne package vitra xa
+
+"corejava" vanne package chai "corejava" project ko "src" folder ma xa
+
+Access Modifier: Private, Public and Protected
+
+Identifiers: Used to identify something
+
+static-- for memory management(efficient)(value pani change hunxa)(class through use hune(e.g. System.out; out is an instance, per class)
+
+instance-- (per object, dherai banxa)
+
+return_type: main method ko return type
+
+
+ACCESS MODIFIERS:
+
+/*
+		 * --------- Access modifiers ---------
+		 * a> Public-- Access everywhere (outside package, project as well)
+		 * b> Protected-- Access in class, same package and child class in different packages, different
+		 * 		package ma jada kheri child class hunuparyo parent ko
+		 * c> Default(package private)-- (just eg. int a;) Access in class and same package
+		 * d> Private-- Access in class only
+		 */
+
+
+
+
+
+
+
+
+
+
