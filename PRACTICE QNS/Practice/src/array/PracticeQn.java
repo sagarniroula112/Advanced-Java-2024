@@ -27,6 +27,7 @@ public class PracticeQn {
 			System.out.println("******* PROVIDE NEW STUDENT'S DATA HERE... *******");
 			System.out.print("Enter student's name: ");
 			studentNames[i]= sc.next();
+			System.out.println("Enter Science, Maths, Computer, Economics and Accountancy marks:: ");
 			
 			for(int j=0;j<subjects.length;j++) {
 				subjectsMarks[i][j]= sc.nextFloat();
