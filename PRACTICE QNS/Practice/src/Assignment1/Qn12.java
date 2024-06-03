@@ -20,6 +20,7 @@ public class Qn12 {
 		String nationality = sc.nextLine();
 
 		System.out.println();
+		System.out.println(********** RESULT ************);
 		System.out.println("Name: " + name);
 		System.out.println("Roll: " + roll);
 		System.out.println("Nationality: " + nationality);
