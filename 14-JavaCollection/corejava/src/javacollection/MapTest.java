@@ -42,10 +42,6 @@ public class MapTest {
 			System.out.println(key + " = " + mapList.get(key) + " Total = " + sum);
 		}
 		
-		/*
-		 * Set of student
-		 * Set of cow
-		 * Set of pen
-		 */
+		
 	}
 }
