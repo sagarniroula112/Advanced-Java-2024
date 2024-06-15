@@ -3,7 +3,7 @@ package javacollection;
 public class JavaCollectionDocs {
 
 	/*
-	 * -------------- Collection Framework/Java Collection ------------ (collection
+	 * ------------ Collection Framework/Java Collection ---------- (collection
 	 * sanga kaam garne api haru)
 	 * used to store and process dynamic multiple data/objects
 	 * 
