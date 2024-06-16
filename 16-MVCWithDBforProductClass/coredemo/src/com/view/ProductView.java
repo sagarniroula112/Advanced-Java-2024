@@ -15,7 +15,7 @@ public class ProductView {
 		
 		// show products AFTER DELETED
 		
-		getAll();
+//		getAll();
 	}
 	
 	// add product
@@ -54,8 +54,11 @@ public class ProductView {
 	}
 	
 	static void delete() {
+		Scanner sc = new Scanner(System.in);
 		ProductService pService = new ProductServiceImpl();
 		
-		pService.deleteProduct(0);
+		System.out.println("Enter ID of product you want to delete:: ");
+		int id = sc.nextInt();
+		pService.deleteProduct(id);
 	}
 }
