@@ -13,9 +13,9 @@ public class ProductView {
 		getAll();
 		delete();
 
-		// show products AFTER DELETED
+		//AFTER DELETED
 
-		// getAll();
+		getAll();
 	}
 
 	// add product
