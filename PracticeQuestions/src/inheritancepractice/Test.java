@@ -1,6 +1,7 @@
 package inheritancepractice;
 
 public class Test {
+    // test file to run the program
     public static void main(String[] args) {
         Employee e1 = new Engineer(69, "Sagar", "hehehe", 50);
         e1.raiseSalary(1.2);
