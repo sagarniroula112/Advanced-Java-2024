@@ -8,7 +8,7 @@ public class Qn11 {
 	 */
 	public static void main(String[] args) {
 
-		// using temp variable
+		// using temp variabl
 		int a = 4;
 		int b = 7;
 		int temp;
