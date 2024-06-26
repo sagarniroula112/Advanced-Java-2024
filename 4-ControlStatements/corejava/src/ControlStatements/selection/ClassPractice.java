@@ -8,6 +8,7 @@ public class ClassPractice {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your post:: ");
 		String post = sc.next().toUpperCase();
+		sc.close();
 		
 		switch(post) {
 			case "MD":

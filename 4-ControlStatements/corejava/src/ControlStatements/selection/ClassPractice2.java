@@ -11,6 +11,7 @@ public class ClassPractice2 {
 		int n2 = sc.nextInt();
 		System.out.println("Enter operator: ");
 		char op = sc.next().charAt(0);
+		sc.close();
 		
 		switch(op) {
 			case '+':
