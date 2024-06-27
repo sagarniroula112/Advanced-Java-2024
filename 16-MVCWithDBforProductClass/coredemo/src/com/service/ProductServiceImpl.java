@@ -20,12 +20,11 @@ public class ProductServiceImpl implements ProductService {
 		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			
-			String sql = "insert into product (name, price, company) values('" + p.getName() + "', '" + p.getPrice() + "', '" + p.getCompany() + "')";
 
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/testdb", "root", "hello");
 			
-			
+			String sql = "insert into product (name, company, price) values('" + p.getName() + "', '" + p.getCompany() + "', '" + p.getPrice() + "')";
+
 			Statement stm = con.createStatement();
 			
 			stm.execute(sql);
@@ -63,26 +62,102 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public List<Product> getAllProducts() {
 		
+//		try {
+//			Class.forName("com.mysql.cj.jdbc.Driver");
+//			String sql = "select * from product";
+//			
+//			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/testdb", "root", "hello");
+//
+//			Statement stm = con.createStatement();
+//			ResultSet rs = stm.executeQuery(sql);
+//			
+//			while(rs.next()) {
+//				System.out.println("id = " + rs.getInt("id"));
+//				System.out.println("ProductName = " + rs.getString("name"));
+//				System.out.println("ProductCompany = " + rs.getString("company"));
+//				System.out.println("ProductPrice = " + rs.getInt("price"));
+//			}
+//			
+//		}catch(Exception e) {
+//			e.printStackTrace();
+//		}
+//		return prodList;
+		
+		List<Product> plist = new ArrayList<>();
+		
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			String sql = "select * from product";
-			
 			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/testdb", "root", "hello");
-
 			Statement stm = con.createStatement();
 			ResultSet rs = stm.executeQuery(sql);
 			
 			while(rs.next()) {
-				System.out.println("id = " + rs.getInt("id"));
-				System.out.println("ProductName = " + rs.getString("name"));
-				System.out.println("ProductCompany = " + rs.getString("company"));
-				System.out.println("ProductPrice = " + rs.getInt("price"));
+				// row mapping to object
+				Product pd = new Product();
+				
+				pd.setId(rs.getInt("id"));
+				pd.setName(rs.getString("name"));
+				pd.setPrice(rs.getInt("price"));
+				pd.setCompany(rs.getString("company"));
+				
+				plist.add(pd);
 			}
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+		
+	return plist;
+		
+	}
+	@Override
+	public void updateProduct(Product p) {
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/testdb", "root", "hello");
 			
-		}catch(Exception e) {
+			String sql = "update product set name = '"+p.getName()+"', company = '"+p.getCompany()+"', price = '"+p.getPrice()+"' where id = '"+p.getId()+"'";
+
+			Statement stm = con.createStatement();
+			
+			stm.execute(sql);
+			
+			System.out.println("Addition success!!");
+		} catch(Exception e) {
 			e.printStackTrace();
 		}
-		return prodList;
 		
+	}
+
+	@Override
+	public List<Product> searchProduct(String sdata) {
+		// TODO Auto-generated method stub
+List<Product> plist = new ArrayList<>();
+		
+		try {
+			Class.forName("com.mysql.cj.jdbc.Driver");
+			String sql = "select * from product where name like '%"+sdata+"%' OR company like '%"+sdata+"%'";
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/testdb", "root", "hello");
+			Statement stm = con.createStatement();
+			ResultSet rs = stm.executeQuery(sql);
+			
+			while(rs.next()) {
+				// row mapping to object
+				Product pd = new Product();
+				
+				pd.setId(rs.getInt("id"));
+				pd.setName(rs.getString("name"));
+				pd.setPrice(rs.getInt("price"));
+				pd.setCompany(rs.getString("company"));
+				
+				plist.add(pd);
+			}
+			} catch(Exception e) {
+				e.printStackTrace();
+			}
+		
+	return plist;
 	}
 }
