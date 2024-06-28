@@ -15,21 +15,6 @@ public class TestDB {
 		// getConnection(url, un, psw);
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/testdb", "root", "hello");
 
-		// --------- INSERT SQL -----------
-		// a. Write SQL
-		// String sql = "insert into user(username, password) values('admin',
-		// 'admin1234s')";
-		//
-		// // b. Create Statement
-		// Statement stm = con.createStatement();
-		//
-		// // c. Execute sql
-		// stm.execute(sql);
-		//
-		// // d. Close db
-		// con.close();
-		// System.out.println("Success!");
-
 		// --------- DELETE SQL ----------
 		String sql = "delete from user where id = 2";
 
