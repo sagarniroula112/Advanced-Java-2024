@@ -25,14 +25,5 @@ public class TestDB {
 		System.out.println("Deletion success!!");
 	}
 
-	// select sql
-
-	// String sql = "select * from user";
-	// Statement stm = con.createStatement();
-	// ResultSet rs = stm.executeQuery(sql);
-
-	// while(rs.next()) {
-	// System.out.println("id = " + rs.getInt("id"));
-	// }
 
 }
