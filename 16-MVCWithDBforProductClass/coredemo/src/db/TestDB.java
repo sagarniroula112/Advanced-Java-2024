@@ -12,7 +12,6 @@ public class TestDB {
 
 		Class.forName("com.mysql.cj.jdbc.Driver");
 
-		// getConnection(url, un, psw);
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3307/testdb", "root", "hello");
 
 		// --------- DELETE SQL ----------
