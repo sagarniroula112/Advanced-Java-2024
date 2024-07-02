@@ -1,7 +1,7 @@
 package com.model;
 
 public class Product {
-	
+	// pojo class instance variables
 	private int id;
 	private String name;
 	private int price;
