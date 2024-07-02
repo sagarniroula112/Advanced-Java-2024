@@ -8,6 +8,7 @@ public class Product {
 	private String company;
 	
 	// instance methods
+	// getters and setters can be easily generated, not typed
 	public int getId() {
 		return id;
 	}
