@@ -7,6 +7,7 @@ public class Product {
 	private int price;
 	private String company;
 	
+	// instance methods
 	public int getId() {
 		return id;
 	}
