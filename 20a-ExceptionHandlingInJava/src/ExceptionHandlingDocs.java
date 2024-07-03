@@ -9,7 +9,7 @@ public class ExceptionHandlingDocs {
         b. Unchecked Exceptions: Not checked at compile-tile but occur during runtime. Eg. ArithmeticException, NullPointerEx.
         c. Errors: Problems beyond control of the user or the programmer. Eg. OutOfMemoryError, StackOverflowError
 
-    -> Exception Handling Keywords:
+    -> Exception Handling Keywords are:
         a. try - code that might throw an exception
         b. catch - catches and handles the exception
         c. finally - code that will run regardless of whether an exception is thrown or not
