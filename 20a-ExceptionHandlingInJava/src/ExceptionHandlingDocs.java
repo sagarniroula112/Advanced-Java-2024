@@ -1,5 +1,6 @@
 public class ExceptionHandlingDocs {
     /*
+    Definitions:
     -> An exception is an event that occurs during the execution of a program that disrupts the normal flow of instructions.
     -> When an exception occurs, Java creates an exception object that contains information about the error.
 
