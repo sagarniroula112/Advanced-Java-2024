@@ -7,5 +7,6 @@ public class JavaSwingDocs {
 	 * 
 	 * # UI components:
 	 *   -> JFrame
+	 * 	 -> JOptionPane
 	 */
 }
