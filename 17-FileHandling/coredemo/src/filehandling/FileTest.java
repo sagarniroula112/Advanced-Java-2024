@@ -17,6 +17,7 @@ public class FileTest {
 		
 		String[] fileNames = folder.list(); // get all files
 		System.out.println(Arrays.toString(fileNames));
+		// important comment
 		
 //		File[] files = folder.listFiles();
 //		
