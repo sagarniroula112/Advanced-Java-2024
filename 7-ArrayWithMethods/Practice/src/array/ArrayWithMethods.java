@@ -3,7 +3,7 @@ package array;
 import java.util.Arrays;
 
 public class ArrayWithMethods {
-//	29 May 2024
+//	29 May 2024 Docs Update
 	/*
 	 * ------------- Array with methods -------------
 	 *  a> array as arguments:
