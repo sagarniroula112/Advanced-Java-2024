@@ -17,7 +17,7 @@ public class ReaderTest {
 			
 			System.out.println(data[1]);
 			
-			// try
+			// try later
 			// 1. db connection, 2. write sql (insert), 3. set values to sql, 4. execute sql
 		}
 	}
