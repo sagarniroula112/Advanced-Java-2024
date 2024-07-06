@@ -7,6 +7,7 @@ public class WriteTest {
 	/* WriteTest methods
 	 * a> FileWriter : to write file
 	 * b> FileReader : to read file
+	 * and many more...
 	 */
 	
 	public static void main(String[] args) throws IOException {
