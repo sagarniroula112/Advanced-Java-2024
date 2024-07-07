@@ -6,7 +6,7 @@ public class MultiDArray {
 	/*
 	 * ----------- Multi-dimensional Array ---------
 	 * 
-	 * 	#syntax:
+	 * 	# syntax:
 	 * 	
 	 * 		data_type array_name[][] = new data_type[row][col];
 	 */
