@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MultiDArray {
 	/*
-	 * ----------- Multi-dimensional Array -----------
+	 * ----------- Multi-dimensional Array ---------
 	 * 
 	 * 	#syntax:
 	 * 	
