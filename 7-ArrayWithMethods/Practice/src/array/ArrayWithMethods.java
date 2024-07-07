@@ -43,7 +43,7 @@ public class ArrayWithMethods {
 		System.out.println("SUM :: " + s);
 	}
 	
-	// Practice: Print array of cities
+	// Practice: Print array of cities in multilines
 	static void printCities(String cities[]) {
 		for(String city: cities) {
 			System.out.print(city+" ");
