@@ -3,7 +3,7 @@ package practicemethods;
 import java.util.Scanner;
 
 public class Qn1 {
-	/*
+	/* Optimized answers:
 	 *  Q> Find area and volume as :
    *    a> getArea :
    *       ->  pass l and b as parameters
