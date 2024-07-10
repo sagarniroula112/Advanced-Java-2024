@@ -2,7 +2,7 @@ package ControlStatements;
 
 public class ControlStatDocs {
 /*
- * Used to implement conditions.
+ * Used to implement conditions...
  * Types:
  * 
  * 	1> Selection(Decision Making).
